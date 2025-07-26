@@ -5,7 +5,7 @@ async function obtenerDatosDeAPI(){
         const res = await response.json();
         console.log(res);
     } catch (error) {
-        console.error(error);
+        console.error(error?.message);
     }
 }
 
@@ -18,3 +18,4 @@ async function obtenerDatav2 (url) {
     })
 }
 obtenerDatosDeAPI();
+
